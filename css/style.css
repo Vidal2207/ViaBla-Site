@@ -214,3 +214,43 @@ button:hover:after {
     opacity: 1;
     right: 20px;
 }
+/* ////////////////////////////// */
+@media (max-width: 600px) {
+  .header-menu{
+    visibility: hidden;
+    display: none;
+  }
+  header{
+    justify-content: center;
+  }
+  .description,.test{
+    /* border: 2px solid red; */
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 8%;
+}
+.description h2{
+    /* border: 2px solid pink; */
+    font-family: 'Calibri';
+    font-size: 200%;
+    text-align: center;
+    margin-top: 1%;
+    margin-bottom: 1%;
+}
+.description p,.test p{
+    text-align: center;
+    /* border: 2px solid red; */
+    width: 83%;
+    font-size: 80%;
+}
+.test p{
+    font-weight: 600;
+}
+.test img,.description img{
+    height: 150px;
+}
+button{
+    margin-top: 10%;
+}
+}
