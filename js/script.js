@@ -12,8 +12,8 @@ function ventanaCargada(){
 $(document).ready(function(){
     scrooll_top();
     $('#logo').click(function() {
-        // location.reload();
-        $(location).attr('href','/index.html');
+        location.reload();
+        // $(location).attr('href','/index.html');
     });
     $('#download').click(function() { 
         location.hash = "#btn_download";
@@ -21,17 +21,17 @@ $(document).ready(function(){
     $('#btn_download').click(function() { 
         linkDescarga();
     });
-    $('#about').click(function() {
-        $(location).attr('href','/about.html');
-    });
+    // $('#about').click(function() {
+    //     $(location).attr('href','/about.html');
+    // });
     $('#privacy').click(function() {
-        $(location).attr('href','/privacy.html');
+        $(location).attr('href','privacy.html');
     });
     $('#back').click(function() {
         history.back();
     });
     $('#home').click(function() {
-        $(location).attr('href','/index.html');
+        $(location).attr('href','index.html');
     });
 });
 function linkDescarga(){
